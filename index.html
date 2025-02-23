@@ -3,15 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Site</title>
+    <title>Your Name | Projects</title>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: radial-gradient(#2a2a2a 1px, transparent 1px);
+            background-size: 80px 80px;
+        }
+        .container {
+            background: #181818;
+            padding: 60px;
+            border-radius: 15px;
+            text-align: left;
+            width: 500px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            border: 1px solid #333;
+            position: relative;
+        }
+        .profile-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .content {
+            margin-left: 90px;
+        }
+        .comic-title {
+            font-size: 14px;
+            background: linear-gradient(90deg, #a855f7, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+        .title {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .description {
+            font-size: 16px;
+            color: #ccc;
+            margin: 20px 0;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #999;
+            margin: 20px 0;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .buttons a {
+            background: linear-gradient(90deg, #a855f7, #f97316);
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+            border: none;
+        }
+        .buttons a:hover {
+            opacity: 0.8;
+        }
+        .social-icons {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-icons a {
+            text-decoration: none;
+        }
+        .social-icons img {
+            width: 35px;
+            height: 35px;
+            filter: invert(100%) grayscale(100%);
+            transition: 0.3s;
+        }
+        .social-icons img:hover {
+            filter: invert(70%) grayscale(100%);
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Site</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <img src="https://github.com/yourusername.png" alt="Profile Image" class="profile-img">
+        <div class="content">
+            <div class="comic-title">High Priestess of Algorithms</div>
+            <div class="title">Katharine Allison</div>
+            <div class="description">My prophecies are backed by 99.9% confidence intervals.</div>
+            <div class="subtitle">Guardian of the sacred datasets, protector of the hidden patterns.</div>
+        </div>
+        <div class="buttons">
+            <a href="#">Data Science Job Scraper & Aggregator</a>
+            <a href="#">Customer Churn Prediction Model</a>
+            <a href="#">Stock Prediction Model</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="Twitter"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email"></a>
+        </div>
+    </div>
 </body>
 </html>
