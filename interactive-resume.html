@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Curriculum Vitae | Katharine Allison</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Source+Sans+Pro:wght@300;400&display=swap');
+        
+        body {
+            background-color: #FDF7F2;
+            color: #333;
+            font-family: 'Source Sans Pro', sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: radial-gradient(#E5B4A1 1.5px, transparent 1.5px);
+            background-size: 80px 80px;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-family: 'Cormorant Garamond', serif;
+            background: linear-gradient(90deg, #9A7EA4, #D18F75);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .cv-wrapper {
+            display: flex;
+            gap: 20px;
+            width: 80%;
+        }
+        .timeline-container, .content-pane {
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(200, 169, 110, 0.2);
+            border: 1px solid #C8A96E;
+        }
+        .timeline-container {
+            width: 30%;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            overflow-y: auto;
+        }
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            position: relative;
+            width: 100%;
+        }
+        .timeline-marker {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .timeline-button {
+            background: linear-gradient(90deg, #9A7EA4, #D18F75);
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-align: center;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 14px;
+        }
+        .timeline-button:hover, .timeline-button.active {
+            transform: scale(1.2);
+            opacity: 0.8;
+        }
+        .content-pane {
+            width: 65%;
+            height: 80vh;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 20px;
+        }
+        .content-box {
+            display: none;
+            width: 90%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(200, 169, 110, 0.2);
+            border: 1px solid #C8A96E;
+            background: rgba(255, 255, 255, 0.8);
+        }
+        .content-box.active {
+            display: block;
+        }
+        .event-description {
+            text-align: left;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .media-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .media-column {
+            flex: 1;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #C8A96E;
+        }
+        .media-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #D18F75;
+        }
+    </style>
+    <script>
+        function showContent(year) {
+            document.querySelectorAll('.content-box').forEach(box => box.classList.remove('active'));
+            document.querySelectorAll('.timeline-button').forEach(btn => btn.classList.remove('active'));
+            let contentBox = document.getElementById(`content-${year}`);
+            let activeButton = document.querySelector(`[data-year='${year}']`);
+            if (contentBox) {
+                contentBox.classList.add('active');
+            }
+            if (activeButton) {
+                activeButton.classList.add('active');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="title">Interactive Curriculum Vitae</div>
+    <div class="cv-wrapper">
+        <div class="timeline-container">
+            <div class="timeline">
+                <script>
+                    const dataYears = [1986, 1997, 2008, 2013, 2018, 2022];
+                    for (let year = 1986; year <= new Date().getFullYear(); year++) {
+                        let hasContent = dataYears.includes(year);
+                        if (hasContent) {
+                            document.write(`<div class="timeline-marker">
+                                <button class="timeline-button" data-year="${year}" onclick="showContent('${year}')">${year}</button>
+                            </div>`);
+                        } else {
+                            document.write(`<div class="timeline-marker"><span>${year}</span></div>`);
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="content-pane">
+            <div id="content-1986" class="content-box">
+                <div class="year-header">1986</div>
+                <p class="event-description">Katharine Allison was born on January 17, 1986.</p>
+                <div class="media-container">
+                    <div class="media-column"><div class="media-title">Documents</div></div>
+                    <div class="media-column"><div class="media-title">Photos</div></div>
+                    <div class="media-column"><div class="media-title">Videos</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
