@@ -29,11 +29,13 @@ This site is built using:
 ## **📌 How to Run Locally**
 If you'd like to run this site locally for development:
 
+
+
 ### Clone the repository:
 ```sh
 git clone https://github.com/keallison/keallison.github.io.git
 cd keallison.github.io
-
+```
 If using Jekyll:
 bundle install
 bundle exec jekyll serve
@@ -49,10 +51,11 @@ This site is automatically deployed through GitHub Pages. Any updates pushed to 
 
 📬 Contact & Socials
 
-📧 Email: your.email@example.com
-🔗 LinkedIn: linkedin.com/in/keallison
-🐦 Twitter: @KEAllisonAI
-📜 Medium: medium.com/@KEAllison
+📧 Email: katharine.allison@icloud.com
+🔗 LinkedIn: [linkedin.com/in/keallison](https://www.linkedin.com/in/katharine-allison-mba-msba-pmp-b84726255/)
+🐦 Twitter: Coming Soon!
+📜 Medium: Coming Soon!
+🎵 TikTok: Coming Soon!
 
 🔍 What’s Next?
 
