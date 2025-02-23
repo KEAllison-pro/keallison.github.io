@@ -52,7 +52,7 @@ This site is automatically deployed through GitHub Pages. Any updates pushed to 
 📬 Contact & Socials
 
 📧 Email: katharine.allison@icloud.com
-🔗 LinkedIn: [linkedin.com/in/keallison](https://www.linkedin.com/in/katharine-allison-mba-msba-pmp-b84726255/)
+🔗 LinkedIn:<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="katharine-allison-mba-msba-pmp-b84726255" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/katharine-allison-mba-msba-pmp-b84726255?trk=profile-badge">Katharine Allison, MBA, MSBA, PMP</a></div>
 🐦 Twitter: Coming Soon!
 📜 Medium: Coming Soon!
 🎵 TikTok: Coming Soon!
