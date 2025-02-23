@@ -66,3 +66,5 @@ I am actively expanding my AI/ML portfolio and working on:
 ✅ Writing AI-focused technical blog posts
 
 🚀 Follow my progress and connect with me!
+
+[About Me](about.html)
