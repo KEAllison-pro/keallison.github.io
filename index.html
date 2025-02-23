@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katharine Allison | Projects</title>
+    <title>Katharine Allison | Portfolio</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Source+Sans+Pro:wght@300;400&display=swap');
         
         body {
-            background-color: #0d0d0d;
-            color: #fff;
-            font-family: 'Space Mono', monospace;
+            background-color: #FDF7F2;
+            color: #333;
+            font-family: 'Source Sans Pro', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-image: radial-gradient(#2a2a2a 1px, transparent 1px);
-            background-size: 60px 60px;
+            background-image: radial-gradient(#E5B4A1 1.5px, transparent 1.5px);
+            background-size: 80px 80px;
         }
         .container {
-            background: #181818;
+            background: rgba(255, 255, 255, 0.8);
             padding: 50px;
             border-radius: 15px;
             text-align: left;
-            width: 500px;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-            border: 1px solid #333;
+            width: 600px;
+            box-shadow: 0 0 15px rgba(200, 169, 110, 0.2);
+            border: 1px solid #C8A96E;
             position: relative;
         }
         .profile-img {
@@ -34,44 +34,50 @@
             height: 70px;
             border-radius: 50%;
             position: absolute;
-            top: 10px;
+            top: 20px;
             left: 10px;
+            border: 2px solid #C8A96E;
         }
         .content {
             margin-top: 90px;
         }
         .comic-title {
-            font-size: 12px;
-            background: linear-gradient(90deg, #a855f7, #f97316);
+            font-size: 18px;
+            background: linear-gradient(90deg, #9A7EA4, #D18F75);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-transform: uppercase;
             margin: 5px 0 15px 0;
+            font-family: 'Cormorant Garamond', serif;
         }
         .title {
             font-size: 34px;
             font-weight: bold;
             margin: 10px 0 20px 0;
+            font-family: 'Cormorant Garamond', serif;
         }
         .description {
-            font-size: 14px;
-            color: #ccc;
+            font-size: 16px;
+            color: #666;
+            font-style: italic;
             margin-bottom: 15px;
         }
         .subtitle {
             font-size: 14px;
-            color: #999;
+            color: #777;
             margin-bottom: 25px;
         }
         .buttons {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: nowrap;
             align-items: center;
             gap: 12px;
             margin-top: 30px;
         }
         .buttons a {
-            background: linear-gradient(90deg, #a855f7, #f97316);
+            background: linear-gradient(90deg, #D8C6E0, #E5B4A1);
             color: white;
             text-decoration: none;
             padding: 8px 14px;
@@ -81,7 +87,10 @@
             border: none;
             font-size: 12px;
             text-align: center;
-            width: 85%;
+            width: auto;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: 'Cormorant Garamond', serif;
         }
         .buttons a:hover {
             opacity: 0.8;
@@ -98,27 +107,44 @@
         .social-icons img {
             width: 28px;
             height: 28px;
-            filter: invert(100%) grayscale(100%);
+            filter: grayscale(100%);
             transition: 0.3s;
         }
         .social-icons img:hover {
-            filter: invert(70%) grayscale(100%);
+            filter: grayscale(50%);
+        }
+    </style>
+<style>
+        .resume-icon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 24px;
+            height: 24px;
+            filter: grayscale(100%);
+            transition: 0.3s;
+        }
+        .resume-icon:hover {
+            filter: grayscale(0%);
         }
     </style>
 </head>
 <body>
+    <a href='#' class='resume-link'><img src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png' alt='Resume' class='resume-icon'></a>
+    <a href='#'><img src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png' alt='Resume' class='resume-icon'></a>
     <div class="container">
         <img src="https://github.com/yourusername.png" alt="Profile Image" class="profile-img">
         <div class="content">
-            <div class="comic-title">High Priestess of Algorithms</div>
+            <div class="comic-title">The Analytical Mind</div>
             <div class="title">Katharine Allison</div>
-            <div class="description">My prophecies are backed by 99.9% confidence intervals.</div>
-            <div class="subtitle">Guardian of the sacred datasets, protector of the hidden patterns.</div>
+            <div class="description">Empowering organizations with predictive intelligence.</div>
+            <div class="subtitle">Precision, efficiency, and innovation.</div>
         </div>
         <div class="buttons">
+            <a href="interactive-resume.html">Interactive Resume</a>
             <a href="data-science-job-scraper.html">Data Science Job Scraper & Aggregator</a>
             <a href="customer-churn-prediction-model.html">Customer Churn Prediction Model</a>
-            <a href="stock-prediction-model.html">Stock Prediction Model</a>
+            <a href="stock-prediction-model.html">Stock Prediction Modelh</a>
         </div>
         <div class="social-icons">
             <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="Twitter"></a>
